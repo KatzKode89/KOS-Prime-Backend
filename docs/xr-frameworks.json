@@ -1,0 +1,15 @@
+{
+  "profileVersion": "1.0.0",
+  "ontologyNode": "KOSPrime.SovereignOS.XRFrameworks",
+  "preferredStandard": "OpenXR",
+  "requiredFoundations": ["Unity XR Plug-in Management", "XR Interaction Toolkit", "Unity Input System"],
+  "adapters": ["AR Foundation", "Meta XR / Meta OpenXR", "Windows Mixed Reality / Windows XR", "SteamVR / OpenVR"],
+  "buildProfiles": ["desktop-steam", "openxr-pc", "quest-openxr", "mobile-ar"],
+  "governance": {
+    "cameraPermission": "explicit",
+    "microphonePermission": "explicit",
+    "visualAttentionAuthorizesAction": false,
+    "glyphAuthorizesAction": false,
+    "defaultInteractionMode": "read_only"
+  }
+}

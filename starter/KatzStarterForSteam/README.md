@@ -32,4 +32,6 @@ KatzStarterForSteam/
 
 Import the scripts into a Unity project, create the scene and UI bindings described in [docs/unity-starter-scene.md](../../../docs/unity-starter-scene.md), and target Windows x64 for a Steam demo build. Steamworks integration, packaging, and store configuration are intentionally outside this starter source package.
 
+The starter targets the `desktop-steam` profile. XR support is optional; developers may add OpenXR and XR Interaction Toolkit later, but this Beta remains playable without a headset.
+
 The repository-wide [MIT License](../../../LICENSE) remains authoritative for repository content. The starter notice documents its scope and does not add a non-commercial restriction under the MIT name.

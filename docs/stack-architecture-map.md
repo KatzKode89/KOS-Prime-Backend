@@ -2,7 +2,7 @@
 
 Packet type: `lattice`
 
-This document is the versioned architecture blueprint for the KOS-Prime stack. It describes the current implementation boundary and the intended flow between Windows/Copilot entrypoints, the PrimeBus routing engine, QuantumCrystals, ChaosField, the EmotionCore and PersonalityPolicy layers, the M3t@G1r! multimodal governance layer, the Glyph System, the Synthesizer Stack, the Unity cockpit, the Windows overlay, the K@tz-0$-Pr1m3-GU1 operator GUI, and the tri-node backbone.
+This document is the versioned architecture blueprint for the KOS-Prime stack. It describes the current implementation boundary and the intended flow between Windows/Copilot entrypoints, the PrimeBus routing engine, QuantumCrystals, ChaosField, the EmotionCore and PersonalityPolicy layers, the M3t@G1r! multimodal governance layer, the Glyph System, the Synthesizer Stack, the Unity cockpit, the Windows overlay, the K@tz-0$-Pr1m3-GU1 operator GUI, the XR framework adapters, and the tri-node backbone.
 
 ## Architecture Map
 
@@ -40,6 +40,7 @@ flowchart LR
         Cockpit[Unity desktop / XR cockpit]
         Overlay[Windows PrimeBus overlay]
         GUI[K@tz-0$-Pr1m3-GU1]
+        XR[OpenXR / XR framework adapters]
         Glyph[Glyph System]
     end
 
@@ -67,6 +68,7 @@ flowchart LR
     Route -->|state, glyph, and audio packets| Cockpit
     Route -->|validated JSON packets| Overlay
     Route -->|validated state and proposals| GUI
+    Route -->|cockpit packets| XR
     Route -->|validated glyph annotations| Glyph
     Glyph -->|visual state cues| Multi
 ```

@@ -62,6 +62,10 @@ Versioned read-only presentation contract for a future WinUI/WPF overlay using t
 
 Versioned governed operator GUI composition for the Windows overlay and Unity cockpit. It binds validated packet state to read-only observability panels and confirmation-gated action proposals without making camera, glyph, emotion, or voice signals authoritative. The model is maintained in `docs/katz-0s-pr1m3-gui.md` and `docs/katz-0s-pr1m3-gui.json`.
 
+## `KOSPrime.SovereignOS.XRFrameworks`
+
+Versioned Unity VR/MR/XR framework contract preferring OpenXR, XR Interaction Toolkit, and the Input System, with AR Foundation, Meta, Windows XR, and SteamVR adapters. Framework support is an integration boundary for app and game developers; it does not imply installed SDKs or target-device validation. The matrix is maintained in `docs/xr-frameworks.md` and `docs/xr-frameworks.json`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.

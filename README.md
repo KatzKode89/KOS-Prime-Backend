@@ -54,6 +54,8 @@ The [Windows EXE build and install guide](docs/windows-exe.md) covers publishing
 
 The separate [CrystalSeekers: Echoes of Destiny Starter Demo](starter/KatzStarterForSteam/README.md) is a deliberately limited Unity/Steam concept using fake local data only. It is not the full KOS-Prime backend.
 
+The [VR/MR/XR framework matrix](docs/xr-frameworks.md) defines OpenXR-first support, Unity app/game developer contracts, platform adapters, build profiles, and permission boundaries.
+
 ## Sovereign OS
 
 [Sovereign OS](docs/sovereign-os.md) is the governed cognitive stack built on the KOS-Prime Engine. It combines PrimeBus, the tri-node backbone, the M3t@G1r! persona layer, SynthStack audio/voice routing, and the formal multimodal governance contract.

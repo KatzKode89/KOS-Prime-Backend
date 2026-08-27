@@ -4,6 +4,8 @@ Version: `1.0.0`
 
 The Unity cockpit is the desktop/XR presentation layer for Sovereign OS. It binds PrimeBus contracts to status panels, STAR-MESH visualization, glyph overlays, the tri-node feed, and SynthStack audio without moving routing logic into the UI.
 
+Framework selection and device adapter guidance are defined in [XR Framework Support](xr-frameworks.md). New Unity work should prefer OpenXR, XR Interaction Toolkit, and the Input System, with vendor SDKs isolated behind adapters.
+
 ## Scene layout
 
 ```text
