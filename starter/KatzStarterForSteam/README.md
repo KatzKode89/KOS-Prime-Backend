@@ -11,6 +11,7 @@ This is a deliberately small Unity desktop demo concept for Steam. It presents t
 - STAR-MESH mini-map with fake points
 - SynthStack indicator with no audio synthesis
 - Council log with prewritten entries
+- Static or simple animated glyph overlay
 - Local C# logic only
 
 This starter demo is **not the full KOS-Prime system**. It has no WSL2 integration, Ubuntu services, PrimeBus routing engine, STAR-MESH daemon, Gemini calls, camera input, microphone input, or real synthesis. It must not be marketed as those systems.
@@ -27,6 +28,7 @@ KatzStarterForSteam/
       StarterShipCoreController.cs
       StarterStarMeshController.cs
       StarterCouncilLog.cs
+      StarterGlyphOverlay.cs
   LICENSE-STARTER-NOTICE.md
 ```
 

@@ -4,12 +4,13 @@ This guide assembles the local-only `K@tz-0$-St@rt3r-F0r-St3@m` demo in Unity.
 
 ## Scene
 
-Create `Assets/Scenes/StarterCockpit.unity` with a Canvas containing four panels:
+Create `Assets/Scenes/StarterCockpit.unity` with a Canvas containing five panels:
 
 1. **ShipCore Status**: two UI Text controls for status and hull integrity. Add `StarterShipCoreController` and assign both fields.
 2. **STAR-MESH Mini-Map**: a RectTransform map root and a small Image point prefab. Add `StarterStarMeshController` and assign the root and point prefab.
 3. **SynthStack Indicator**: static UI text such as `SYNTHSTACK: PREVIEW ONLY`. Do not attach an audio source or claim synthesis is active.
 4. **Council Log**: a multiline UI Text control. Add `StarterCouncilLog` and assign the log field.
+5. **Glyph Overlay**: a simple Image or RectTransform icon. Add `StarterGlyphOverlay` for a visual pulse; this is a static presentation effect, not glyph validation.
 
 Save the scene as `StarterCockpit.unity` and optionally create `Assets/Prefabs/StarterPanels.prefab` from the Canvas panel hierarchy.
 
