@@ -1,0 +1,7 @@
+{
+  "intent": "health.check",
+  "payload": {
+    "module": "ShieldHullIntegrityArray",
+    "integrityPercentage": 85
+  }
+}

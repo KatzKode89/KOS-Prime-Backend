@@ -23,3 +23,7 @@ printf '%s\n' '{"intent":"health.check","payload":{"module":"ShieldHullIntegrity
 ```
 
 Set `GEMINI_API_KEY` to enable the authenticated Gemini request path. The optional `GEMINI_MODEL` environment variable selects the model; no credential is stored in the repository.
+
+## Windows Copilot Stack
+
+The [`windows-copilot/`](windows-copilot/) folder contains a PowerShell launcher and sample packet for invoking the Gemini adapter from Windows Copilot workflows or Copilot Studio actions. It supports packet files and inline JSON and works in mock mode without an API key.
