@@ -48,6 +48,8 @@ The [M3t@G1r! multimodal governance model](docs/m3tag1r-multimodal-governance.md
 
 The [KOS-Prime Custom Game and App Maker](docs/kos-maker.md) provides instant, zero-dependency Python starters for custom games and apps through `tools/kos_maker.py`.
 
+The [Windows EXE build and install guide](docs/windows-exe.md) covers publishing the `KOSPrime.Runner.exe` PrimeBus smoke host and installing it to the current user's `%LOCALAPPDATA%` directory.
+
 ## Sovereign OS
 
 [Sovereign OS](docs/sovereign-os.md) is the governed cognitive stack built on the KOS-Prime Engine. It combines PrimeBus, the tri-node backbone, the M3t@G1r! persona layer, SynthStack audio/voice routing, and the formal multimodal governance contract.
