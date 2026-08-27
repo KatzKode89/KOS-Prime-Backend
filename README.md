@@ -48,6 +48,8 @@ The [M3t@G1r! multimodal governance model](docs/m3tag1r-multimodal-governance.md
 
 The [KOS-Prime Custom Game and App Maker](docs/kos-maker.md) provides instant, zero-dependency Python starters for custom games and apps through `tools/kos_maker.py`.
 
+The separate [CrystalSeekers: Echoes of Destiny Beta notebook](notebooks/CrystalSeekers_Echoes_of_Destiny_Beta.ipynb) provides the 20-section Gemini/Google Cloud planning and implementation workflow. It uses repository-versioned contracts and does not claim access to private Gemini training history or unseen model artifacts.
+
 The [Windows EXE build and install guide](docs/windows-exe.md) covers publishing the `KOSPrime.Runner.exe` PrimeBus smoke host and installing it to the current user's `%LOCALAPPDATA%` directory.
 
 ## Sovereign OS
