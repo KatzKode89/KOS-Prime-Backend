@@ -36,4 +36,6 @@ Import the scripts into a Unity project, create the scene and UI bindings descri
 
 The starter targets the `desktop-steam` profile. XR support is optional; developers may add OpenXR and XR Interaction Toolkit later, but this Beta remains playable without a headset.
 
+The companion [CrystalSeekers narrative module](../../../docs/crystalseekers-narrative.md) supplies fictional missions and lore for future content passes. The starter build itself remains fake-data-only and does not invoke Gemini.
+
 The repository-wide [MIT License](../../../LICENSE) remains authoritative for repository content. The starter notice documents its scope and does not add a non-commercial restriction under the MIT name.

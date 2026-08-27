@@ -60,6 +60,8 @@ The [Steam Beta distribution guide](docs/steam-distribution.md) finalizes the Cr
 
 The [K@tz-0$-St3@m-D3ck framework](docs/steam-deck-stack.md) provides app/game design, deterministic custom-world generation, Unity batch compilation, Steam distributor packaging, Big Picture, Steam Link, SteamOS, Steam Deck, and controller-action profiles.
 
+The [Cry$t@lS33k3r$: 3ch03$ 0f D3$t1ny narrative module](docs/crystalseekers-narrative.md) provides the Beta world bible, fictional character and mission structure, and governed Gemini generation contract. Its machine-readable content profile is [crystalseekers-narrative.json](config/crystalseekers-narrative.json).
+
 The [final Steam starter specification](docs/steam-starter-final.md) defines the deliberately limited CrystalSeekers cockpit, fake-data boundaries, Steam labels, and licensing/build requirements.
 
 The [K@tz-0$-St3@m-St@rt3r PC installer](docs/steam-starter-installer.md) installs a completed Unity Windows x64 player per user, creates an optional desktop shortcut, and can launch the demo.

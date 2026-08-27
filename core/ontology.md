@@ -70,6 +70,10 @@ Versioned Unity VR/MR/XR framework contract preferring OpenXR, XR Interaction To
 
 Versioned Steam app/game designer, deterministic world generator, Unity compiler adapter, distributor, and platform profile for Windows, SteamOS, Steam Deck, Steam Link, and Big Picture. Publisher-managed Steamworks credentials and deployment remain outside the repository. The contract is maintained in `docs/steam-deck-stack.md` and `config/katz-0s-steam-deck.json`.
 
+## `KOSPrime.CrystalSeekers.Narrative`
+
+Versioned fictional narrative module for Cry$t@lS33k3r$: 3ch03$ 0f D3$t1ny. It generates mission and lore content through the governed observe/suggest/draft/confirm/execute ladder without authorizing real-world actions. The world bible is maintained in `docs/crystalseekers-narrative.md` and `config/crystalseekers-narrative.json`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.

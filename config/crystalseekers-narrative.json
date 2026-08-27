@@ -1,0 +1,20 @@
+{
+  "id": "CrystalSeekersEchoesOfDestiny",
+  "version": "1.0.0",
+  "title": "Cry$t@lS33k3r$: 3ch03$ 0f D3$t1ny",
+  "contentType": "fictional-narrative-module",
+  "betaPackage": "K@tz-0$-St@rt3r-F0r-St3@m",
+  "systems": ["ShipCore", "STAR-MESH", "PrimeBus", "SynthStack", "GlyphSystem", "CouncilTriNode", "KatzKrapStore"],
+  "missionPhases": ["observe", "suggest", "draft", "confirm", "execute"],
+  "generation": {
+    "provider": "Google Gemini adapter or local mock",
+    "liveProviderDefault": false,
+    "privateTrainingDataImported": false,
+    "realWorldActionsAuthorized": false
+  },
+  "review": {
+    "fictionOnly": true,
+    "contentReviewRequired": true,
+    "licenseReviewRequired": true
+  }
+}
