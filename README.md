@@ -62,6 +62,8 @@ The [K@tz-0$-St3@m-D3ck framework](docs/steam-deck-stack.md) provides app/game d
 
 The [final Steam starter specification](docs/steam-starter-final.md) defines the deliberately limited CrystalSeekers cockpit, fake-data boundaries, Steam labels, and licensing/build requirements.
 
+The [K@tz-0$-St3@m-St@rt3r PC installer](docs/steam-starter-installer.md) installs a completed Unity Windows x64 player per user, creates an optional desktop shortcut, and can launch the demo.
+
 ## Sovereign OS
 
 [Sovereign OS](docs/sovereign-os.md) is the governed cognitive stack built on the KOS-Prime Engine. It combines PrimeBus, the tri-node backbone, the M3t@G1r! persona layer, SynthStack audio/voice routing, and the formal multimodal governance contract.
