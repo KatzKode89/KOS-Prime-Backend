@@ -68,6 +68,8 @@ The [Sovereign OS Unity Cockpit specification](docs/unity-cockpit.md) maps the d
 
 The [Windows overlay contract](docs/windows-overlay.md) defines the future `PrimeBusClient` to `OverlayViewModel` packet bindings, named-pipe boundary, and governed disconnected heartbeat. Its machine-readable envelope is [windows-overlay-contract.json](docs/windows-overlay-contract.json).
 
+The [K@tz-0$-Pr1m3-GU1 model](docs/katz-0s-pr1m3-gui.md) defines the governed operator GUI across Windows and Unity surfaces, with read-only observability and confirmation-gated action proposals. Its machine-readable policy is [katz-0s-pr1m3-gui.json](docs/katz-0s-pr1m3-gui.json).
+
 ## M3t@G1r! Persona Layer
 
 [M3t@G1r!](docs/m3tag1r-persona.md) is the governed synthetic persona façade of the Sovereign OS stack. It combines EmotionCore, PersonalityPolicy, CognitiveEngine, and GenesisOutput to produce structured, policy-aligned responses through PrimeBus. It does not claim autonomous emotion or identity.

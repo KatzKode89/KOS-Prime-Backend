@@ -58,6 +58,10 @@ Versioned desktop/XR presentation layer binding Unity panels, glyph rendering, S
 
 Versioned read-only presentation contract for a future WinUI/WPF overlay using the optional `KOSPrimeBusPipe` transport. It maps validated PrimeBus packet types to OverlayViewModel fields and uses a bounded disconnected heartbeat without inventing subsystem state. The contract is maintained in `docs/windows-overlay.md` and `docs/windows-overlay-contract.json`.
 
+## `KOSPrime.SovereignOS.GUI`
+
+Versioned governed operator GUI composition for the Windows overlay and Unity cockpit. It binds validated packet state to read-only observability panels and confirmation-gated action proposals without making camera, glyph, emotion, or voice signals authoritative. The model is maintained in `docs/katz-0s-pr1m3-gui.md` and `docs/katz-0s-pr1m3-gui.json`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.

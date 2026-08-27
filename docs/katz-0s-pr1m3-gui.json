@@ -1,0 +1,18 @@
+{
+  "id": "Katz0sPr1m3GU1",
+  "display_name": "K@tz-0$-Pr1m3-GU1",
+  "version": "1.0.0",
+  "ontology_node": "KOSPrime.SovereignOS.GUI",
+  "surfaces": ["WindowsOverlay", "UnityCockpit"],
+  "default_mode": "read_only",
+  "packet_bindings": ["state", "module.health", "star-mesh", "synthstack.voice", "synthstack.sound", "glyph.annotation", "council"],
+  "action_tiers": ["observe", "suggest", "draft", "confirm", "execute"],
+  "governance": {
+    "camera_authorizes_action": false,
+    "glyph_authorizes_action": false,
+    "emotion_authorizes_action": false,
+    "explicit_confirmation_for_execute": true,
+    "raw_camera_frames_retained": false,
+    "raw_audio_retained": false
+  }
+}
