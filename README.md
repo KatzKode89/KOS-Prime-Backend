@@ -54,6 +54,8 @@ The [KOS-Prime Custom Game and App Maker](docs/kos-maker.md) provides instant, z
 
 All camera, audio, and agent actions are explicit, consent-gated, inspectable, and bounded. No autonomous identity, emotion, or hidden behavior is implemented; Sovereign OS operates through versioned contracts, PrimeBus packets, and tri-node constraints.
 
+The [KOS-Prime Glyph System](docs/glyph-system/glyph-families.md) provides governed visual tokens for lattice, chaos, resonance, persona, and action-tier annotation. Glyphs are annotations only and never authorize commands.
+
 ## M3t@G1r! Persona Layer
 
 [M3t@G1r!](docs/m3tag1r-persona.md) is the governed synthetic persona façade of the Sovereign OS stack. It combines EmotionCore, PersonalityPolicy, CognitiveEngine, and GenesisOutput to produce structured, policy-aligned responses through PrimeBus. It does not claim autonomous emotion or identity.

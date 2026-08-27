@@ -1,0 +1,4 @@
+{
+  "family": "governance",
+  "glyphs": ["confirm-node", "observe-sigil", "draft-sigil", "execute-sigil", "revocation-mark"]
+}

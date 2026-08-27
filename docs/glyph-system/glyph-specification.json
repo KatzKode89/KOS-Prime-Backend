@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://katzos-prime.dev/kos-prime/glyph-specification.v1.json",
+  "title": "KOS-Prime Glyph",
+  "type": "object",
+  "required": ["glyph_id", "family", "shape", "complexity", "allowed_contexts", "governance"],
+  "properties": {
+    "glyph_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "family": { "enum": ["lattice", "chaos", "resonance", "persona", "governance"] },
+    "shape": { "type": "string", "minLength": 1 },
+    "complexity": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "allowed_contexts": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "governance": {
+      "type": "object",
+      "required": ["requires_confirmation", "retention"],
+      "properties": {
+        "requires_confirmation": { "type": "boolean" },
+        "retention": { "enum": ["none", "ephemeral", "audit"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

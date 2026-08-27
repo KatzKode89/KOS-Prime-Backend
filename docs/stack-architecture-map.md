@@ -2,7 +2,7 @@
 
 Packet type: `lattice`
 
-This document is the versioned architecture blueprint for the KOS-Prime stack. It describes the current implementation boundary and the intended flow between Windows/Copilot entrypoints, the PrimeBus routing engine, QuantumCrystals, ChaosField, the EmotionCore and PersonalityPolicy layers, the M3t@G1r! multimodal governance layer, the Synthesizer Stack, and the tri-node backbone.
+This document is the versioned architecture blueprint for the KOS-Prime stack. It describes the current implementation boundary and the intended flow between Windows/Copilot entrypoints, the PrimeBus routing engine, QuantumCrystals, ChaosField, the EmotionCore and PersonalityPolicy layers, the M3t@G1r! multimodal governance layer, the Glyph System, the Synthesizer Stack, and the tri-node backbone.
 
 ## Architecture Map
 
@@ -36,6 +36,7 @@ flowchart LR
         Emotion[EmotionCore]
         Policy[PersonalityPolicy]
         Multi[M3t@G1r! multimodal governance]
+        Glyph[Glyph System]
     end
 
     PS -->|environment and commands| Route
@@ -57,6 +58,8 @@ flowchart LR
     Policy -->|KOSPrime.Personality.Policy| Cognitive
     Route -->|visual attention / action proposal| Multi
     Multi -->|governed voice and sound packets| Synth
+    Route -->|validated glyph annotations| Glyph
+    Glyph -->|visual state cues| Multi
 ```
 
 PowerShell is an entrypoint adapter, not a second routing engine. It forwards JSON to the Python bridge directly or through Prime-Linux vOmega in WSL2; the C# PrimeBus remains the typed routing boundary.
