@@ -54,6 +54,10 @@ Versioned Windows Subsystem for Linux 2 execution profile for the Prime-Linux vO
 
 Versioned desktop/XR presentation layer binding Unity panels, glyph rendering, SynthStack audio, and tri-node feeds to the existing PrimeBus contracts. Unity remains a consumer of the backend assembly and does not become a second router. The scene and adapter contract is maintained in `docs/unity-cockpit.md`.
 
+## `KOSPrime.SovereignOS.WindowsOverlay`
+
+Versioned read-only presentation contract for a future WinUI/WPF overlay using the optional `KOSPrimeBusPipe` transport. It maps validated PrimeBus packet types to OverlayViewModel fields and uses a bounded disconnected heartbeat without inventing subsystem state. The contract is maintained in `docs/windows-overlay.md` and `docs/windows-overlay-contract.json`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.

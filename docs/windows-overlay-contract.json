@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://katzos-prime.dev/kos-prime/windows-overlay-contract.v1.json",
+  "title": "KOS-Prime Windows Overlay Packet Binding",
+  "type": "object",
+  "required": ["packet_type", "payload"],
+  "properties": {
+    "packet_type": {
+      "enum": ["state", "star-mesh", "synthstack.voice", "synthstack.sound", "glyph.annotation", "council"]
+    },
+    "ontology_segment": { "type": "string", "minLength": 1 },
+    "correlation_id": { "type": ["string", "null"] },
+    "timestamp": { "type": ["number", "string"] },
+    "sequence": { "type": ["integer", "null"] },
+    "payload": { "type": "object" }
+  },
+  "additionalProperties": true
+}
