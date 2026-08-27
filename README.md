@@ -46,6 +46,8 @@ The [EmotionCore and PersonalityPolicy specification](docs/emotional-processor-p
 
 The [M3t@G1r! multimodal governance model](docs/m3tag1r-multimodal-governance.md) defines opt-in camera attention metadata, governed voice/sound synthesis, and confirmation-gated agentic action tiers. Its machine-readable policy is [m3tag1r-multimodal-policy.json](docs/m3tag1r-multimodal-policy.json).
 
+The [KOS-Prime Custom Game and App Maker](docs/kos-maker.md) provides instant, zero-dependency Python starters for custom games and apps through `tools/kos_maker.py`.
+
 ## Sovereign OS
 
 [Sovereign OS](docs/sovereign-os.md) is the governed cognitive stack built on the KOS-Prime Engine. It combines PrimeBus, the tri-node backbone, the M3t@G1r! persona layer, SynthStack audio/voice routing, and the formal multimodal governance contract.
