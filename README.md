@@ -42,6 +42,8 @@ The [Synthesizer Stack specification](docs/synthesizer-stack.md) defines packet-
 
 The [K@tz-0$-$t@rt3r-M0d3l](docs/katz-starter-model.md) is the canonical starter profile for composing the current cross-platform stack. A machine-readable version is available at [docs/katz-starter-model.json](docs/katz-starter-model.json).
 
+The [EmotionCore and PersonalityPolicy specification](docs/emotional-processor-personality.md) defines bounded pseudo-emotional state and deterministic response policy packets for the tri-node backbone.
+
 ## Architecture Map
 
 ```mermaid

@@ -20,6 +20,14 @@ The `lattice` packet segment for text-to-voice synthesis, voice profiles, prosod
 
 Versioned baseline profile composing the Windows/Copilot entrypoints, Prime-Linux vOmega, Gemini adapter, STAR-MESH transport, PrimeBus router, core domains, tri-node backbone, and Synthesizer Stack contracts. The human-readable model is maintained in `docs/katz-starter-model.md` and the machine-readable profile in `docs/katz-starter-model.json`.
 
+## `KOSPrime.Emotion.State`
+
+Versioned `lattice` packet for bounded EmotionCore policy signals: mood, energy, focus, and tension. The state is observable, clamped, smoothed, and logged; it is not a claim of subjective experience.
+
+## `KOSPrime.Personality.Policy`
+
+Versioned `lattice` or `xr-frame` packet containing deterministic response constraints derived from a trait profile, role contract, and EmotionState. The contract is maintained in `docs/emotional-processor-personality.md`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.
