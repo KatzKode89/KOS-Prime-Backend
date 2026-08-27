@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/KOSPrime.Core/KOSPrime.Core.csproj" />
+  <Project Path="tests/KOSPrime.Tests/KOSPrime.Tests.csproj" />
+</Solution>
