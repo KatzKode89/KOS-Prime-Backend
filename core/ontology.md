@@ -28,6 +28,10 @@ Versioned `lattice` packet for bounded EmotionCore policy signals: mood, energy,
 
 Versioned `lattice` or `xr-frame` packet containing deterministic response constraints derived from a trait profile, role contract, and EmotionState. The contract is maintained in `docs/emotional-processor-personality.md`.
 
+## `KOSPrime.M3tG1r.Persona`
+
+Governed synthetic persona façade composed of EmotionCore, PersonalityPolicy, CognitiveEngine, and GenesisOutput. It expresses a versioned role contract through PrimeBus packets and makes no claim of subjective emotion or autonomous identity. The canonical definition is maintained in `docs/m3tag1r-persona.md`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.
