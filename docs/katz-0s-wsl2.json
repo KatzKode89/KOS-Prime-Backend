@@ -1,0 +1,22 @@
+{
+  "id": "Katz0sWSL2",
+  "display_name": "K@tz-0$-WSL2",
+  "version": "1.0.0",
+  "ontology_node": "KOSPrime.Katz0sWSL2",
+  "distribution": "Ubuntu",
+  "role": "Prime-Linux vOmega execution node",
+  "default_repo_path": "~/kos-prime",
+  "runtime": {
+    "python": "3.10+",
+    "required_packages": ["python3", "python3-pip", "git"],
+    "optional_dependencies": ["requirements.txt"]
+  },
+  "boundaries": {
+    "windows_entrypoint": true,
+    "star_mesh_transport": true,
+    "primebus_ontology_routing": true,
+    "camera_default": "disabled",
+    "microphone_default": "disabled",
+    "credentials": "environment-only"
+  }
+}

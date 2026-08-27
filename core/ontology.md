@@ -44,6 +44,10 @@ Top-level governed cognitive-stack composition for PrimeBus, the tri-node backbo
 
 Versioned visual-token annotation layer for lattice, chaos, resonance, persona, and governance cues. Glyphs are non-linguistic, non-identity-bearing, non-emotional, and cannot authorize actions. The specification is maintained in `docs/glyph-system/` and the family registries in `core/glyphs/`.
 
+## `KOSPrime.Katz0sWSL2`
+
+Versioned Windows Subsystem for Linux 2 execution profile for the Prime-Linux vOmega node. It defines the Ubuntu toolchain, Windows-to-WSL launcher path, and credential/privacy boundaries without introducing another router or module. The profile is maintained in `docs/katz-0s-wsl2.md` and `docs/katz-0s-wsl2.json`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.

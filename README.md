@@ -56,6 +56,8 @@ All camera, audio, and agent actions are explicit, consent-gated, inspectable, a
 
 The [KOS-Prime Glyph System](docs/glyph-system/glyph-families.md) provides governed visual tokens for lattice, chaos, resonance, persona, and action-tier annotation. Glyphs are annotations only and never authorize commands.
 
+The [K@tz-0$-WSL2 profile](docs/katz-0s-wsl2.md) defines the Ubuntu-based Prime-Linux vOmega execution node, Windows launcher path, and WSL2 privacy and credential boundaries. Its machine-readable configuration is [katz-0s-wsl2.json](docs/katz-0s-wsl2.json).
+
 ## M3t@G1r! Persona Layer
 
 [M3t@G1r!](docs/m3tag1r-persona.md) is the governed synthetic persona façade of the Sovereign OS stack. It combines EmotionCore, PersonalityPolicy, CognitiveEngine, and GenesisOutput to produce structured, policy-aligned responses through PrimeBus. It does not claim autonomous emotion or identity.

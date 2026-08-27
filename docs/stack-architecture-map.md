@@ -12,7 +12,7 @@ flowchart LR
         Win[Windows Copilot]
         PS[PowerShell launcher]
         Py[gemini_omni_agent.py]
-        WSL[Prime-Linux vOmega / WSL2 Ubuntu]
+        WSL[K@tz-0$-WSL2 / Prime-Linux vOmega]
         SM[STAR-MESH daemon]
         Events[TCJH / sensors]
         Win --> PS
