@@ -1,0 +1,24 @@
+{
+  "id": "KatzStarterModel",
+  "display_name": "K@tz-0$-$t@rt3r-M0d3l",
+  "version": "1.0.0",
+  "ontology_node": "KOSPrime.KatzStarterModel",
+  "packet_type": "lattice",
+  "components": {
+    "entrypoint": ["WindowsCopilot", "PowerShell"],
+    "execution": ["PrimeLinuxV1_WSL2"],
+    "model_adapter": ["GeminiOmniAgent"],
+    "transport": ["STAR-MESH"],
+    "router": ["PrimeBus"],
+    "domains": ["QuantumCrystals", "ChaosField", "SynthesizerStack"],
+    "backbone": ["CognitiveEngine", "ReclusionMemory", "GenesisOutput"]
+  },
+  "invariants": [
+    "PrimeBus is the ontology router",
+    "STAR-MESH is transport only",
+    "Cross-stage packets preserve correlation identifiers",
+    "Modules communicate through packet contracts"
+  ],
+  "default_mode": "gemini-mock",
+  "live_credentials": "environment-only"
+}

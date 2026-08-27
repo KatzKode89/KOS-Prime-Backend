@@ -16,6 +16,10 @@ The `lattice` packet segment for instrument, texture, environmental, and engine 
 
 The `lattice` packet segment for text-to-voice synthesis, voice profiles, prosody, emotion, and XR acoustic context. Its packet contract is maintained in `docs/synthesizer-stack.md`.
 
+## `KOSPrime.KatzStarterModel`
+
+Versioned baseline profile composing the Windows/Copilot entrypoints, Prime-Linux vOmega, Gemini adapter, STAR-MESH transport, PrimeBus router, core domains, tri-node backbone, and Synthesizer Stack contracts. The human-readable model is maintained in `docs/katz-starter-model.md` and the machine-readable profile in `docs/katz-starter-model.json`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.

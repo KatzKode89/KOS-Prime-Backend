@@ -40,6 +40,8 @@ The final Edge layer is [Invoke-KOSPrimeEdgeCopilot.ps1](windows-copilot/Invoke-
 
 The [Synthesizer Stack specification](docs/synthesizer-stack.md) defines packet-driven hybrid sound and voice synthesis across Windows and Prime-Linux vOmega, including `SynthStack_vOmega.Sound` and `SynthStack_vOmega.Voice` ontology segments.
 
+The [K@tz-0$-$t@rt3r-M0d3l](docs/katz-starter-model.md) is the canonical starter profile for composing the current cross-platform stack. A machine-readable version is available at [docs/katz-starter-model.json](docs/katz-starter-model.json).
+
 ## Architecture Map
 
 ```mermaid
