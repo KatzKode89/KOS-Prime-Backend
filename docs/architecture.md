@@ -11,3 +11,5 @@ The tri-node backbone remains the ownership model:
 - GenesisOutput generates energy vectors, navigation feeds, shield modulation, and final telemetry outputs.
 
 There are no direct module-to-module links. Module commands, state, telemetry, and health events use the PrimeBus contract defined in `core/PrimeBus.md`.
+
+See [KOSPrime.StackArchitectureMap](stack-architecture-map.md) for the complete entrypoint, routing, packet, and tri-node flow map.

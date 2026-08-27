@@ -4,6 +4,10 @@
 
 The `lattice` packet segment for CrystalSeekers ship core modules. This segment contains the shared vocabulary for module inputs, outputs, state, telemetry, and health events.
 
+## `KOSPrime.StackArchitectureMap`
+
+Versioned architecture-map node for the Windows/Copilot entrypoints, PowerShell-to-Python bridge, PrimeBus routing engine, QuantumCrystals, ChaosField, and tri-node backbone. The canonical visual and packet mapping is maintained in `docs/stack-architecture-map.md`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.
