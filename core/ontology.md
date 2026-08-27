@@ -32,6 +32,10 @@ Versioned `lattice` or `xr-frame` packet containing deterministic response const
 
 Governed synthetic persona façade composed of EmotionCore, PersonalityPolicy, CognitiveEngine, and GenesisOutput. It expresses a versioned role contract through PrimeBus packets and makes no claim of subjective emotion or autonomous identity. The canonical definition is maintained in `docs/m3tag1r-persona.md`.
 
+## `KOSPrime.M3tG1r.MultimodalGovernance`
+
+Versioned governance contract for M3t@G1r! camera-derived visual-attention metadata, Synthesizer Stack voice/sound packets, and bounded agentic action tiers. Camera and microphone access are opt-in, raw sensory data is not retained by default, and visual attention never authorizes an action. The contract is maintained in `docs/m3tag1r-multimodal-governance.md`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.

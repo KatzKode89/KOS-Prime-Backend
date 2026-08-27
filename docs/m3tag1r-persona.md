@@ -37,3 +37,5 @@ PrimeBus remains the only ontology router. The persona façade may interpret int
 ## Inspectability
 
 Every persona decision should be explainable through its profile version, role, EmotionState reference, policy version, correlation ID, and output mode. Raw user content should not be retained merely to support persona styling.
+
+The multimodal extension is governed separately in [M3t@G1r! Multimodal Agentic-Layer Governance](m3tag1r-multimodal-governance.md). Camera attention, voice, sound, and action execution remain consent-gated and subordinate to PrimeBus policy.

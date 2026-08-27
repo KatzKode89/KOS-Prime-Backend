@@ -1,0 +1,24 @@
+{
+  "policyVersion": "1.0.0",
+  "ontologyNode": "KOSPrime.M3tG1r.MultimodalGovernance",
+  "camera": {
+    "default": "disabled",
+    "signal": "visual_attention",
+    "localProcessingPreferred": true,
+    "retainFrames": false,
+    "identityRecognition": false,
+    "attentionAuthorizesAction": false
+  },
+  "audio": {
+    "microphoneDefault": "disabled",
+    "retainRawAudio": false,
+    "syntheticDisclosure": true,
+    "independentMute": true
+  },
+  "actionTiers": ["observe", "suggest", "draft", "execute"],
+  "execution": {
+    "defaultTier": "suggest",
+    "confirmationRequiredFor": ["destructive", "external", "credentialed", "privacy-sensitive"]
+  },
+  "consentStates": ["disabled", "opted_in", "active", "paused", "revoked"]
+}

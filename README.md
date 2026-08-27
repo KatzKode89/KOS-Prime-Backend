@@ -44,6 +44,8 @@ The [K@tz-0$-$t@rt3r-M0d3l](docs/katz-starter-model.md) is the canonical starter
 
 The [EmotionCore and PersonalityPolicy specification](docs/emotional-processor-personality.md) defines bounded pseudo-emotional state and deterministic response policy packets for the tri-node backbone.
 
+The [M3t@G1r! multimodal governance model](docs/m3tag1r-multimodal-governance.md) defines opt-in camera attention metadata, governed voice/sound synthesis, and confirmation-gated agentic action tiers. Its machine-readable policy is [m3tag1r-multimodal-policy.json](docs/m3tag1r-multimodal-policy.json).
+
 ## M3t@G1r! Persona Layer
 
 [M3t@G1r!](docs/m3tag1r-persona.md) is the governed synthetic persona façade of the Sovereign OS stack. It combines EmotionCore, PersonalityPolicy, CognitiveEngine, and GenesisOutput to produce structured, policy-aligned responses through PrimeBus. It does not claim autonomous emotion or identity.
