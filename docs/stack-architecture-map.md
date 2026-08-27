@@ -36,6 +36,7 @@ flowchart LR
         Emotion[EmotionCore]
         Policy[PersonalityPolicy]
         Multi[M3t@G1r! multimodal governance]
+        Sovereign[Sovereign OS POC sync]
         Glyph[Glyph System]
     end
 
@@ -58,6 +59,8 @@ flowchart LR
     Policy -->|KOSPrime.Personality.Policy| Cognitive
     Route -->|visual attention / action proposal| Multi
     Multi -->|governed voice and sound packets| Synth
+    Sovereign -->|KOSPrime.SovereignOS lattice handoff| Route
+    PS -->|POC packet| Sovereign
     Route -->|validated glyph annotations| Glyph
     Glyph -->|visual state cues| Multi
 ```

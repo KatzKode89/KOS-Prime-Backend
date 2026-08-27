@@ -1,0 +1,31 @@
+{
+  "profileVersion": "1.0.0",
+  "profileId": "SovereignOS.IntelCoreUltraI9.DevPC",
+  "target": "Intel Core Ultra i9 class development PC",
+  "principles": {
+    "deriveConcurrencyFromRuntime": true,
+    "avoidFixedCoreCount": true,
+    "noOverclockingOrThermalControl": true
+  },
+  "dotnet": {
+    "targetFramework": "net9.0",
+    "environment": {
+      "DOTNET_gcServer": "1",
+      "DOTNET_Thread_UseAllCpuGroups": "1"
+    },
+    "buildCommand": "dotnet test KOSPrime.slnx --configuration Release"
+  },
+  "python": {
+    "version": "3.12+",
+    "workerPolicy": "runtime_cpu_count",
+    "environment": {
+      "PYTHONUNBUFFERED": "1"
+    }
+  },
+  "sovereignLayer": {
+    "syncTool": "tools/sovereign_poc_sync.py",
+    "ontologyNode": "KOSPrime.SovereignOS",
+    "defaultActionTier": "suggest",
+    "credentials": "environment-only"
+  }
+}

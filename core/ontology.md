@@ -40,6 +40,8 @@ Versioned governance contract for M3t@G1r! camera-derived visual-attention metad
 
 Top-level governed cognitive-stack composition for PrimeBus, the tri-node backbone, M3t@G1r!, EmotionCore, PersonalityPolicy, SynthStack, and multimodal governance. The canonical model is maintained in `docs/sovereign-os.md`.
 
+The `SovereignOS.IntelCoreUltraI9.DevPC` profile and local POC sync adapter provide a reproducible development execution path for this composition. They stamp, but do not directly publish, `KOSPrime.SovereignOS` handoff packets.
+
 ## `KOSPrime.GlyphSystem`
 
 Versioned visual-token annotation layer for lattice, chaos, resonance, persona, and governance cues. Glyphs are non-linguistic, non-identity-bearing, non-emotional, and cannot authorize actions. The specification is maintained in `docs/glyph-system/` and the family registries in `core/glyphs/`.

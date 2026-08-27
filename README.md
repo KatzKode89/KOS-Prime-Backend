@@ -54,6 +54,8 @@ The [KOS-Prime Custom Game and App Maker](docs/kos-maker.md) provides instant, z
 
 All camera, audio, and agent actions are explicit, consent-gated, inspectable, and bounded. No autonomous identity, emotion, or hidden behavior is implemented; Sovereign OS operates through versioned contracts, PrimeBus packets, and tri-node constraints.
 
+The [Intel Core Ultra i9 dev profile](docs/sovereign-devpc.md) optimizes reproducible .NET/Python development settings and includes the [Sovereign Layer POC sync tool](tools/sovereign_poc_sync.py).
+
 The [KOS-Prime Glyph System](docs/glyph-system/glyph-families.md) provides governed visual tokens for lattice, chaos, resonance, persona, and action-tier annotation. Glyphs are annotations only and never authorize commands.
 
 The [K@tz-0$-WSL2 profile](docs/katz-0s-wsl2.md) defines the Ubuntu-based Prime-Linux vOmega execution node, Windows launcher path, and WSL2 privacy and credential boundaries. Its machine-readable configuration is [katz-0s-wsl2.json](docs/katz-0s-wsl2.json).

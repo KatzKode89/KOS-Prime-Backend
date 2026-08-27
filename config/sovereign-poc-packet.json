@@ -1,0 +1,10 @@
+{
+  "intent": "health.check",
+  "correlation_id": "poc-health-001",
+  "action_tier": "observe",
+  "destination": "CognitiveEngine",
+  "payload": {
+    "module": "ShieldHullIntegrityArray",
+    "integrityPercentage": 85
+  }
+}
