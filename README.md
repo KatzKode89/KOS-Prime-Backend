@@ -38,6 +38,8 @@ For Windows hosts, [docs/prime-linux-wsl2.md](docs/prime-linux-wsl2.md) document
 
 The final Edge layer is [Invoke-KOSPrimeEdgeCopilot.ps1](windows-copilot/Invoke-KOSPrimeEdgeCopilot.ps1). It saves a structured response handoff and can open Microsoft Copilot in Edge without embedding credentials or automating browser chat input.
 
+The [Synthesizer Stack specification](docs/synthesizer-stack.md) defines packet-driven hybrid sound and voice synthesis across Windows and Prime-Linux vOmega, including `SynthStack_vOmega.Sound` and `SynthStack_vOmega.Voice` ontology segments.
+
 ## Architecture Map
 
 ```mermaid

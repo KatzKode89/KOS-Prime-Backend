@@ -8,6 +8,14 @@ The `lattice` packet segment for CrystalSeekers ship core modules. This segment 
 
 Versioned architecture-map node for the Windows/Copilot entrypoints, PowerShell-to-Python bridge, PrimeBus routing engine, QuantumCrystals, ChaosField, and tri-node backbone. The canonical visual and packet mapping is maintained in `docs/stack-architecture-map.md`.
 
+## `SynthStack_vOmega.Sound`
+
+The `lattice` packet segment for instrument, texture, environmental, and engine sound synthesis. Its packet contract is maintained in `docs/synthesizer-stack.md`.
+
+## `SynthStack_vOmega.Voice`
+
+The `lattice` packet segment for text-to-voice synthesis, voice profiles, prosody, emotion, and XR acoustic context. Its packet contract is maintained in `docs/synthesizer-stack.md`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.

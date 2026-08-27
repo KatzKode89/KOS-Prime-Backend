@@ -2,7 +2,7 @@
 
 Packet type: `lattice`
 
-This document is the versioned architecture blueprint for the KOS-Prime stack. It describes the current implementation boundary and the intended flow between Windows/Copilot entrypoints, the PrimeBus routing engine, QuantumCrystals, ChaosField, and the tri-node backbone.
+This document is the versioned architecture blueprint for the KOS-Prime stack. It describes the current implementation boundary and the intended flow between Windows/Copilot entrypoints, the PrimeBus routing engine, QuantumCrystals, ChaosField, the Synthesizer Stack, and the tri-node backbone.
 
 ## Architecture Map
 
@@ -32,6 +32,7 @@ flowchart LR
         Cognitive[CognitiveEngine]
         Memory[ReclusionMemory]
         Genesis[GenesisOutput]
+        Synth[Synthesizer Stack]
     end
 
     PS -->|environment and commands| Route
@@ -47,6 +48,8 @@ flowchart LR
     Cognitive -->|commands and control state| Route
     Memory -->|recall and telemetry history| Cognitive
     Genesis -->|output vectors and telemetry| Route
+    Route -->|sound.lattice / voice.lattice| Synth
+    Synth -->|audio metadata and XR artifacts| Genesis
 ```
 
 PowerShell is an entrypoint adapter, not a second routing engine. It forwards JSON to the Python bridge directly or through Prime-Linux vOmega in WSL2; the C# PrimeBus remains the typed routing boundary.
@@ -71,6 +74,7 @@ PowerShell is an entrypoint adapter, not a second routing engine. It forwards JS
 | QuantumCrystals | `lattice` | Resonance and harmonic-energy packets. |
 | ChaosField | `entropy`, `chaos` | Entropy-vector processing and chaotic evaluation. |
 | Tri-node backbone | `lattice`, `xr-frame` | Decisions, recall, synthesis, and telemetry. |
+| Synthesizer Stack | `lattice` | Sound and voice synthesis through `SynthStack_vOmega.Sound` and `SynthStack_vOmega.Voice`. |
 
 All executable C# packets use `PacketEnvelope` and the fields defined in `src/KOSPrime.Core/PacketTypes.cs`. The Python bridge emits a JSON envelope with `packet_type`, `ontology_segment`, and `intent`; it must be adapted to the C# source, destination, type, and sequence fields before direct bus publication.
 
@@ -85,6 +89,7 @@ All executable C# packets use `PacketEnvelope` and the fields defined in `src/KO
 - No new module is implied by this map; QuantumCrystals and ChaosField remain the documented core domains.
 - Prime-Linux vOmega is an execution node under Windows, not a new KOS-Prime module or routing layer.
 - STAR-MESH transports packets but does not classify ontology semantics or dispatch modules; those remain PrimeBus responsibilities.
+- The Synthesizer Stack consumes sound and voice packets through PrimeBus and returns audio metadata or XR artifacts to GenesisOutput.
 
 ## Monitoring Path
 
