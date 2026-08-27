@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "actionSet": "KOSPrimeCockpit",
+  "actions": {
+    "move": { "type": "analog", "suggestedBindings": ["left_stick"] },
+    "look": { "type": "analog", "suggestedBindings": ["right_stick", "gyro"] },
+    "interact": { "type": "digital", "suggestedBindings": ["south_face"] },
+    "menu": { "type": "digital", "suggestedBindings": ["menu"] },
+    "mute_voice": { "type": "digital", "suggestedBindings": ["left_shoulder"] },
+    "mute_sound": { "type": "digital", "suggestedBindings": ["right_shoulder"] }
+  },
+  "profiles": ["desktop-steam", "steam-deck", "steam-link", "openxr-pc"],
+  "rules": {
+    "useSteamInput": true,
+    "requireKeyboardFallback": true,
+    "neverMapExecuteWithoutConfirmation": true
+  }
+}

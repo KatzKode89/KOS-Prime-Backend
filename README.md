@@ -58,6 +58,8 @@ The [VR/MR/XR framework matrix](docs/xr-frameworks.md) defines OpenXR-first supp
 
 The [Steam Beta distribution guide](docs/steam-distribution.md) finalizes the CrystalSeekers starter package, manifest, source ZIP workflow, and Unity/Steamworks release checklist.
 
+The [K@tz-0$-St3@m-D3ck framework](docs/steam-deck-stack.md) provides app/game design, deterministic custom-world generation, Unity batch compilation, Steam distributor packaging, Big Picture, Steam Link, SteamOS, Steam Deck, and controller-action profiles.
+
 ## Sovereign OS
 
 [Sovereign OS](docs/sovereign-os.md) is the governed cognitive stack built on the KOS-Prime Engine. It combines PrimeBus, the tri-node backbone, the M3t@G1r! persona layer, SynthStack audio/voice routing, and the formal multimodal governance contract.

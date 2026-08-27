@@ -1,0 +1,24 @@
+{
+  "profileVersion": "1.0.0",
+  "profileId": "Katz0sSteamDeck",
+  "product": "K@tz-0$-St3@m-D3ck",
+  "distributionTargets": ["steam-windows-x64", "steam-linux-x64", "steam-deck", "steam-link"],
+  "preferredRuntime": "Proton-or-native-SteamOS",
+  "framework": {
+    "designer": "tools/steam_stack.py new",
+    "compiler": "Unity Editor batchmode or publisher-managed build pipeline",
+    "distributor": "tools/steam_stack.py package"
+  },
+  "input": {
+    "controller": "Steam Input",
+    "bigPicture": true,
+    "steamLink": true,
+    "keyboardMouseFallback": true
+  },
+  "governance": {
+    "backendRequired": false,
+    "credentials": "environment-only",
+    "cameraDefault": "disabled",
+    "microphoneDefault": "disabled"
+  }
+}

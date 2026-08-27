@@ -66,6 +66,10 @@ Versioned governed operator GUI composition for the Windows overlay and Unity co
 
 Versioned Unity VR/MR/XR framework contract preferring OpenXR, XR Interaction Toolkit, and the Input System, with AR Foundation, Meta, Windows XR, and SteamVR adapters. Framework support is an integration boundary for app and game developers; it does not imply installed SDKs or target-device validation. The matrix is maintained in `docs/xr-frameworks.md` and `docs/xr-frameworks.json`.
 
+## `KOSPrime.SovereignOS.SteamDeck`
+
+Versioned Steam app/game designer, deterministic world generator, Unity compiler adapter, distributor, and platform profile for Windows, SteamOS, Steam Deck, Steam Link, and Big Picture. Publisher-managed Steamworks credentials and deployment remain outside the repository. The contract is maintained in `docs/steam-deck-stack.md` and `config/katz-0s-steam-deck.json`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.
