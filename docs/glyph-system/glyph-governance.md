@@ -20,7 +20,7 @@ Glyphs are annotations only. They may visualize a validated state or policy, but
 
 Glyph arrays must appear inside an existing PrimeBus packet with `packet_type`, `ontology_segment`, source, destination, timestamp, sequence, and correlation ID. Consumers must reject an unknown glyph, family/context mismatch, or governance requirement that is not satisfied by the parent packet.
 
-Governance glyphs follow `KOSPrime.M3tG1r.MultimodalGovernance`. `execute-sigil` is a visual label for an already-confirmed execution state; it cannot cause execution. `revocation-mark` must render immediately when consent is revoked and must not be retained beyond the applicable audit policy.
+Governance glyphs follow `KOSPrime.M3tG1r.MultimodalGovernance`. `execute-sigil` is a visual label for an already-confirmed execution state; it cannot cause execution. `confirm-node` uses `short_term` retention, while `execute-sigil` and `revocation-mark` use `audit_log` retention. `revocation-mark` must render immediately when consent is revoked and must not be retained beyond the applicable audit policy.
 
 ## Rendering rules
 

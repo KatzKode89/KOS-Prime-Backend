@@ -14,4 +14,4 @@ Glyphs are non-linguistic visual tokens for state visualization, packet annotati
 | `persona` | `attention-ring`, `persona-anchor`, `mode-shift` | M3t@G1r! policy-layer modulation and multimodal cues. |
 | `governance` | `confirm-node`, `observe-sigil`, `draft-sigil`, `execute-sigil`, `revocation-mark` | Consent, confirmation, action-tier, and revocation signaling. |
 
-Per-family machine-readable registries are stored in `core/glyphs/`. The complete field contract is defined in `glyph-specification.json`.
+Per-family machine-readable registries are stored in `core/glyphs/`. The complete catalog and field contract are defined in `glyph-specification.json`.

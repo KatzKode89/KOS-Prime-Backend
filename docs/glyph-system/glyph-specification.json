@@ -1,24 +1,51 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://katzos-prime.dev/kos-prime/glyph-specification.v1.json",
-  "title": "KOS-Prime Glyph",
-  "type": "object",
-  "required": ["glyph_id", "family", "shape", "complexity", "allowed_contexts", "governance"],
-  "properties": {
-    "glyph_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-    "family": { "enum": ["lattice", "chaos", "resonance", "persona", "governance"] },
-    "shape": { "type": "string", "minLength": 1 },
-    "complexity": { "type": "integer", "minimum": 1, "maximum": 5 },
-    "allowed_contexts": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+  "$schema": "https://kos-prime.local/schemas/glyph-specification.v1.json",
+  "system": "KOS-Prime Glyph System",
+  "version": "1.0.0-omega",
+  "governance_ref": "KOSPrime.M3tG1r.MultimodalGovernance",
+  "families": {
+    "lattice": {
+      "description": "Used for structural, spatial, and crystalline state representation.",
+      "glyphs": [
+        { "glyph_id": "crystal-node", "shape": "hex_spine", "complexity": 3, "allowed_contexts": ["PrimeBus.lattice", "QuantumCrystals", "GenesisOutput.visual"], "governance": { "requires_confirmation": false, "retention": "none" } },
+        { "glyph_id": "lattice-bridge", "shape": "dual_vector_link", "complexity": 2, "allowed_contexts": ["PrimeBus.lattice", "QuantumCrystals"], "governance": { "requires_confirmation": false, "retention": "none" } },
+        { "glyph_id": "quantum-spine", "shape": "vertical_axis_pulse", "complexity": 4, "allowed_contexts": ["QuantumCrystals", "ShipCore_vOmega"], "governance": { "requires_confirmation": false, "retention": "none" } },
+        { "glyph_id": "harmonic-pulse", "shape": "concentric_ring", "complexity": 2, "allowed_contexts": ["PrimeBus.lattice", "SynthStack_vOmega"], "governance": { "requires_confirmation": false, "retention": "none" } }
+      ]
+    },
+    "chaos": {
+      "description": "Used for entropy, unpredictability, and ChaosField signaling.",
+      "glyphs": [
+        { "glyph_id": "fracture-mark", "shape": "jagged_ascent", "complexity": 3, "allowed_contexts": ["ChaosField", "PrimeBus.telemetry"], "governance": { "requires_confirmation": false, "retention": "none" } },
+        { "glyph_id": "entropy-spark", "shape": "scattered_nodes", "complexity": 2, "allowed_contexts": ["ChaosField"], "governance": { "requires_confirmation": false, "retention": "none" } },
+        { "glyph_id": "chaos-vector", "shape": "skewed_arrow", "complexity": 3, "allowed_contexts": ["ChaosField", "ReclusionCore"], "governance": { "requires_confirmation": false, "retention": "none" } }
+      ]
+    },
+    "resonance": {
+      "description": "Used for SynthStack audio/voice modulation.",
+      "glyphs": [
+        { "glyph_id": "resonance-loop", "shape": "closed_wave", "complexity": 2, "allowed_contexts": ["SynthStack_vOmega.Sound", "SynthStack_vOmega.Voice"], "governance": { "requires_confirmation": false, "retention": "none" } },
+        { "glyph_id": "pitch-wave", "shape": "sinusoidal_arc", "complexity": 2, "allowed_contexts": ["SynthStack_vOmega.Voice"], "governance": { "requires_confirmation": false, "retention": "none" } },
+        { "glyph_id": "tempo-knot", "shape": "interlocked_nodes", "complexity": 3, "allowed_contexts": ["SynthStack_vOmega.Sound"], "governance": { "requires_confirmation": false, "retention": "none" } }
+      ]
+    },
+    "persona": {
+      "description": "Used for persona-layer modulation and multimodal governance cues (M3t@G1r!).",
+      "glyphs": [
+        { "glyph_id": "attention-ring", "shape": "halo_pulse", "complexity": 1, "allowed_contexts": ["M3t@G1r!", "GenesisOutput"], "governance": { "requires_confirmation": false, "retention": "none" } },
+        { "glyph_id": "persona-anchor", "shape": "tri_point_lock", "complexity": 3, "allowed_contexts": ["M3t@G1r!"], "governance": { "requires_confirmation": false, "retention": "none" } },
+        { "glyph_id": "mode-shift", "shape": "rotating_chevron", "complexity": 2, "allowed_contexts": ["M3t@G1r!", "CognitiveEngine"], "governance": { "requires_confirmation": false, "retention": "none" } }
+      ]
+    },
     "governance": {
-      "type": "object",
-      "required": ["requires_confirmation", "retention"],
-      "properties": {
-        "requires_confirmation": { "type": "boolean" },
-        "retention": { "enum": ["none", "ephemeral", "audit"] }
-      },
-      "additionalProperties": false
+      "description": "Used for consent, confirmation, and action-tier signaling.",
+      "glyphs": [
+        { "glyph_id": "confirm-node", "shape": "closed_hex", "complexity": 2, "allowed_contexts": ["KOSPrime.M3tG1r.MultimodalGovernance"], "governance": { "requires_confirmation": true, "retention": "short_term" } },
+        { "glyph_id": "observe-sigil", "shape": "open_eye_abstract", "complexity": 3, "allowed_contexts": ["KOSPrime.M3tG1r.MultimodalGovernance"], "governance": { "requires_confirmation": false, "retention": "none" } },
+        { "glyph_id": "draft-sigil", "shape": "dashed_contour", "complexity": 2, "allowed_contexts": ["KOSPrime.M3tG1r.MultimodalGovernance"], "governance": { "requires_confirmation": false, "retention": "none" } },
+        { "glyph_id": "execute-sigil", "shape": "solid_vector_arrow", "complexity": 3, "allowed_contexts": ["KOSPrime.M3tG1r.MultimodalGovernance"], "governance": { "requires_confirmation": true, "retention": "audit_log" } },
+        { "glyph_id": "revocation-mark", "shape": "strikethrough_cross", "complexity": 2, "allowed_contexts": ["KOSPrime.M3tG1r.MultimodalGovernance"], "governance": { "requires_confirmation": true, "retention": "audit_log" } }
+      ]
     }
-  },
-  "additionalProperties": false
+  }
 }
