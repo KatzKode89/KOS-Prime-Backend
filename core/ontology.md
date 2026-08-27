@@ -50,6 +50,10 @@ Versioned visual-token annotation layer for lattice, chaos, resonance, persona, 
 
 Versioned Windows Subsystem for Linux 2 execution profile for the Prime-Linux vOmega node. It defines the Ubuntu toolchain, Windows-to-WSL launcher path, and credential/privacy boundaries without introducing another router or module. The profile is maintained in `docs/katz-0s-wsl2.md` and `docs/katz-0s-wsl2.json`.
 
+## `KOSPrime.SovereignOS.UnityCockpit`
+
+Versioned desktop/XR presentation layer binding Unity panels, glyph rendering, SynthStack audio, and tri-node feeds to the existing PrimeBus contracts. Unity remains a consumer of the backend assembly and does not become a second router. The scene and adapter contract is maintained in `docs/unity-cockpit.md`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.
