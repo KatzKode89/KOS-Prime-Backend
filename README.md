@@ -36,6 +36,8 @@ For Windows hosts, [docs/prime-linux-wsl2.md](docs/prime-linux-wsl2.md) document
 
 [star_mesh_daemon.py](star_mesh_daemon.py) is the WebSocket transport boundary for cross-node packet exchange. Install its dependency with `python3 -m pip install -r requirements.txt`, review [star-mesh.json](star-mesh.json), and launch it with `python3 star_mesh_daemon.py`. The daemon validates transport packets and emits accepted packets for a future PrimeBus ingress adapter; it does not replace PrimeBus routing.
 
+The final Edge layer is [Invoke-KOSPrimeEdgeCopilot.ps1](windows-copilot/Invoke-KOSPrimeEdgeCopilot.ps1). It saves a structured response handoff and can open Microsoft Copilot in Edge without embedding credentials or automating browser chat input.
+
 ## Architecture Map
 
 ```mermaid

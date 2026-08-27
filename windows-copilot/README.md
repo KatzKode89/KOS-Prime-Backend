@@ -31,3 +31,16 @@ powershell.exe -ExecutionPolicy Bypass -File .\windows-copilot\Invoke-KOSPrimeCo
 ```
 
 The launcher writes the agent's JSON response to standard output, making it suitable for capture by another Windows workflow. Errors are written to standard error and preserve a nonzero exit code.
+
+## Edge Copilot handoff
+
+Use `Invoke-KOSPrimeEdgeCopilot.ps1` when Microsoft Edge is the final human-facing Copilot surface:
+
+```powershell
+.\windows-copilot\Invoke-KOSPrimeEdgeCopilot.ps1 `
+	-InputPath .\windows-copilot\sample-packet.json `
+	-OutputPath .\kos-prime-edge-handoff.json `
+	-OpenEdge
+```
+
+Add `-UseWsl -LinuxRepoPath "/home/your-ubuntu-user/kos-prime"` to execute through the WSL2 launcher. The script saves the PrimeBus-compatible JSON response and opens `https://copilot.microsoft.com/` in Edge. It does not inject text into the browser or automate Copilot chat input; the handoff file is the explicit boundary for review or a later approved workflow.
