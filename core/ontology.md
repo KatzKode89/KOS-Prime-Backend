@@ -36,6 +36,10 @@ Governed synthetic persona façade composed of EmotionCore, PersonalityPolicy, C
 
 Versioned governance contract for M3t@G1r! camera-derived visual-attention metadata, Synthesizer Stack voice/sound packets, and bounded agentic action tiers. Camera and microphone access are opt-in, raw sensory data is not retained by default, and visual attention never authorizes an action. The contract is maintained in `docs/m3tag1r-multimodal-governance.md`.
 
+## `KOSPrime.SovereignOS`
+
+Top-level governed cognitive-stack composition for PrimeBus, the tri-node backbone, M3t@G1r!, EmotionCore, PersonalityPolicy, SynthStack, and multimodal governance. The canonical model is maintained in `docs/sovereign-os.md`.
+
 ### Ownership
 
 - **CognitiveEngine** interprets intent, computes control state, and monitors module integrity.

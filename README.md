@@ -46,6 +46,12 @@ The [EmotionCore and PersonalityPolicy specification](docs/emotional-processor-p
 
 The [M3t@G1r! multimodal governance model](docs/m3tag1r-multimodal-governance.md) defines opt-in camera attention metadata, governed voice/sound synthesis, and confirmation-gated agentic action tiers. Its machine-readable policy is [m3tag1r-multimodal-policy.json](docs/m3tag1r-multimodal-policy.json).
 
+## Sovereign OS
+
+[Sovereign OS](docs/sovereign-os.md) is the governed cognitive stack built on the KOS-Prime Engine. It combines PrimeBus, the tri-node backbone, the M3t@G1r! persona layer, SynthStack audio/voice routing, and the formal multimodal governance contract.
+
+All camera, audio, and agent actions are explicit, consent-gated, inspectable, and bounded. No autonomous identity, emotion, or hidden behavior is implemented; Sovereign OS operates through versioned contracts, PrimeBus packets, and tri-node constraints.
+
 ## M3t@G1r! Persona Layer
 
 [M3t@G1r!](docs/m3tag1r-persona.md) is the governed synthetic persona façade of the Sovereign OS stack. It combines EmotionCore, PersonalityPolicy, CognitiveEngine, and GenesisOutput to produce structured, policy-aligned responses through PrimeBus. It does not claim autonomous emotion or identity.
