@@ -13,9 +13,10 @@ flowchart LR
         PS[PowerShell launcher]
         Py[gemini_omni_agent.py]
         WSL[Prime-Linux vOmega / WSL2 Ubuntu]
-        Events[TCJH / STAR-MESH / sensors]
+        SM[STAR-MESH daemon]
+        Events[TCJH / sensors]
         Win --> PS
-        PS -->|JSON stdin/stdout| WSL --> Py
+        PS -->|JSON stdin/stdout| WSL --> Py --> SM
     end
 
     subgraph Bus[PrimeBus Routing Engine]
@@ -34,7 +35,7 @@ flowchart LR
     end
 
     PS -->|environment and commands| Route
-    Py -->|lattice response packet| Route
+    SM -->|validated transport packet| Route
     Events -->|entropy / chaos input| Route
     Classify --> QC
     Classify --> Chaos
@@ -55,6 +56,7 @@ PowerShell is an entrypoint adapter, not a second routing engine. It forwards JS
 | Layer | Components | Responsibility |
 | --- | --- | --- |
 | Entrypoint | Windows Copilot, PowerShell, Prime-Linux vOmega, Python bridge | Ingest user commands and environment events, then provide Linux execution under Windows. |
+| Transport | STAR-MESH daemon | Exchange WebSocket packets and forward validated transport data to PrimeBus ingress. |
 | Routing | `IPrimeBus`, `PrimeBus`, ontology | Validate registered endpoints, classify packets, enforce sequence ordering, and dispatch. |
 | Crystal domain | QuantumCrystals | Process lattice resonance, harmonic energy, and crystal state transitions. |
 | Chaos domain | ChaosField | Evaluate entropy and chaos vectors from environment or command inputs. |
@@ -82,6 +84,7 @@ All executable C# packets use `PacketEnvelope` and the fields defined in `src/KO
 - GenesisOutput owns final control vectors, energy modulation, and telemetry emission.
 - No new module is implied by this map; QuantumCrystals and ChaosField remain the documented core domains.
 - Prime-Linux vOmega is an execution node under Windows, not a new KOS-Prime module or routing layer.
+- STAR-MESH transports packets but does not classify ontology semantics or dispatch modules; those remain PrimeBus responsibilities.
 
 ## Monitoring Path
 

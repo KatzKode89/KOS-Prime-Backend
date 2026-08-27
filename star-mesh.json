@@ -1,0 +1,27 @@
+{
+  "$schema": "https://katzos-prime.dev/star-mesh.schema.v1",
+  "version": "1.0.0",
+  "node": {
+    "id": "katzos.local.win",
+    "role": "transport",
+    "ws_endpoint": "ws://127.0.0.1:8991",
+    "health_interval_ms": 2500
+  },
+  "peers": [
+    {
+      "id": "katzos.wsl2.agent",
+      "endpoint": "ws://127.0.0.1:8992",
+      "retry_ms": 1500,
+      "max_retries": 5
+    }
+  ],
+  "packet": {
+    "allowed_types": ["entropy", "chaos", "expansion", "lattice", "xr-frame"],
+    "drop_unknown": true
+  },
+  "transport": {
+    "max_queue": 256,
+    "heartbeat_ms": 2000,
+    "backoff_ms": 500
+  }
+}
