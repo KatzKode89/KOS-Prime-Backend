@@ -1,0 +1,25 @@
+{
+  "product": "CrystalSeekers: Echoes of Destiny",
+  "package": "K@tz-0$-St@rt3r-F0r-St3@m",
+  "channel": "beta",
+  "version": "0.1.0-beta",
+  "platforms": ["windows-x64"],
+  "engine": "Unity",
+  "scene": "StarterCockpit.unity",
+  "data_mode": "fake-local",
+  "backend_required": false,
+  "steam": {
+    "distribution": "Steam demo",
+    "pricing": "free or low-cost at publisher discretion",
+    "steamworks_sdk": "publisher-managed",
+    "depot": "windows-x64"
+  },
+  "claims": {
+    "full_kos_prime": false,
+    "primebus_runtime": false,
+    "wsl2": false,
+    "gemini": false,
+    "real_audio_synthesis": false,
+    "camera_or_microphone": false
+  }
+}

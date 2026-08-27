@@ -56,6 +56,8 @@ The separate [CrystalSeekers: Echoes of Destiny Starter Demo](starter/KatzStarte
 
 The [VR/MR/XR framework matrix](docs/xr-frameworks.md) defines OpenXR-first support, Unity app/game developer contracts, platform adapters, build profiles, and permission boundaries.
 
+The [Steam Beta distribution guide](docs/steam-distribution.md) finalizes the CrystalSeekers starter package, manifest, source ZIP workflow, and Unity/Steamworks release checklist.
+
 ## Sovereign OS
 
 [Sovereign OS](docs/sovereign-os.md) is the governed cognitive stack built on the KOS-Prime Engine. It combines PrimeBus, the tri-node backbone, the M3t@G1r! persona layer, SynthStack audio/voice routing, and the formal multimodal governance contract.
