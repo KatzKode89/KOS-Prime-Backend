@@ -30,6 +30,8 @@ The [`windows-copilot/`](windows-copilot/) folder contains a PowerShell launcher
 
 The complete stack flow is documented in [docs/stack-architecture-map.md](docs/stack-architecture-map.md), including its Mermaid architecture diagram and `KOSPrime.StackArchitectureMap` ontology registration.
 
+For Windows hosts, [docs/prime-linux-wsl2.md](docs/prime-linux-wsl2.md) documents the Prime-Linux vOmega WSL2 node and [Invoke-KOSPrimeWsl.ps1](windows-copilot/Invoke-KOSPrimeWsl.ps1) launcher.
+
 ## Architecture Map
 
 ```mermaid

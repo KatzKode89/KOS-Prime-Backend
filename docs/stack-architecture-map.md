@@ -12,9 +12,10 @@ flowchart LR
         Win[Windows Copilot]
         PS[PowerShell launcher]
         Py[gemini_omni_agent.py]
+        WSL[Prime-Linux vOmega / WSL2 Ubuntu]
         Events[TCJH / STAR-MESH / sensors]
         Win --> PS
-        PS -->|JSON stdin/stdout| Py
+        PS -->|JSON stdin/stdout| WSL --> Py
     end
 
     subgraph Bus[PrimeBus Routing Engine]
@@ -47,13 +48,13 @@ flowchart LR
     Genesis -->|output vectors and telemetry| Route
 ```
 
-PowerShell is an entrypoint adapter, not a second routing engine. It forwards JSON to the Python bridge or receives JSON from it; the C# PrimeBus remains the typed routing boundary.
+PowerShell is an entrypoint adapter, not a second routing engine. It forwards JSON to the Python bridge directly or through Prime-Linux vOmega in WSL2; the C# PrimeBus remains the typed routing boundary.
 
 ## Layer Responsibilities
 
 | Layer | Components | Responsibility |
 | --- | --- | --- |
-| Entrypoint | Windows Copilot, PowerShell, Python bridge | Ingest user commands and environment events. |
+| Entrypoint | Windows Copilot, PowerShell, Prime-Linux vOmega, Python bridge | Ingest user commands and environment events, then provide Linux execution under Windows. |
 | Routing | `IPrimeBus`, `PrimeBus`, ontology | Validate registered endpoints, classify packets, enforce sequence ordering, and dispatch. |
 | Crystal domain | QuantumCrystals | Process lattice resonance, harmonic energy, and crystal state transitions. |
 | Chaos domain | ChaosField | Evaluate entropy and chaos vectors from environment or command inputs. |
@@ -80,6 +81,7 @@ All executable C# packets use `PacketEnvelope` and the fields defined in `src/KO
 - ReclusionMemory owns persistence, recall, and event correlation.
 - GenesisOutput owns final control vectors, energy modulation, and telemetry emission.
 - No new module is implied by this map; QuantumCrystals and ChaosField remain the documented core domains.
+- Prime-Linux vOmega is an execution node under Windows, not a new KOS-Prime module or routing layer.
 
 ## Monitoring Path
 
